@@ -1,0 +1,17 @@
+.gallery {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+}
+
+img {
+	object-fit:cover;
+	height: 100%;
+
+transition: transform 250ms linear ;
+}
+
+img:hover {
+	transform: scale(1.1);
+	box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.75);
+}
