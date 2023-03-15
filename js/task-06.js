@@ -6,7 +6,7 @@ inputRef.addEventListener("blur", onInputBlur);
 function onInputBlur(event) {
   const inputValue = event.currentTarget.value;
 
-	if (inputValue.length >= lengthData) {
+	if (inputValue.length === lengthData) {
     inputRef.classList.add("valid");
     inputRef.classList.remove("invalid");
   } else {

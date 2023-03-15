@@ -7,11 +7,13 @@ function onFormSubmit(event) {
 
 	const { email, password } = event.currentTarget.elements;
 
-	if (email.value === '' || password.value === '') alert("Звповніть всі поля!");
-	
-	usersData[email.name] = email.value;
+	if (email.value === '' || password.value === '') {
+		alert("Звповніть всі поля!")
+	} else {
+   usersData[email.name] = email.value;
 	usersData[password.name] = password.value;
 	console.log(usersData);
 	
 	event.currentTarget.reset();
+	}
 }
